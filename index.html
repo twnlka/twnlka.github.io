@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <div class="portfolio-main">
+        <!-- Header -->
+
+        <header>
+
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <a href="#"><img src="assets/img/logo.svg" alt=""></a>
+                    </div>
+    
+                    <div class="navigation-bar">
+                        <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="services.html">services</a></li>
+                            <li><a href="work.html">my work</a></li>
+                            <li><a href="blog.html">blog</a></li>
+
+                            <li class="hire-btn"><a href="#">Hire me</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- toggle bar -->
+                    <div class="toggle-bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    
+                </nav>
+            </div>
+
+        </header>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <div class="container">
+                <div class="main-content-wrapper">
+                    <div class="col-left">
+                        <span>Hi i am John Box</span>
+                        <h1>Freelancer | Fullstack developer</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, impedit laborum maiores, sequi, nam alias quasi culpa consequatur incidunt eveniet molestias rem debitis odio nihil quibusdam ipsam non cumque excepturi.</p>
+                        <a href="#" class="btn-main">
+                            See my work
+                            <span><img src="assets/img/arrow-right.svg" alt="arrow"></span>
+                        </a>
+                    </div>
+                    
+                    <div class="col-right">
+                            <img src="assets/img/john.svg" alt="">
+                    </div>
+                </div>
+
+                        <!-- Experience -->
+                <div class="experience-section">
+                    <div class="experience-inner">
+
+                        <div class="col">
+                            <h3>5 years</h3>
+                            <p>experience</p>
+                        </div>
+
+                        <div class="col">
+                            <h3>5 years</h3>
+                            <p>experience</p>
+                        </div>
+
+                        <div class="col">
+                            <h3>5 years</h3>
+                            <p>experience</p>
+                        </div>
+
+                        <div class="col">
+                            <h3>5 years</h3>
+                            <p>experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script>
+    $('.toggle-bar').on('click', function(event){
+        $('this').toggleClass('open');
+        $('.navigation-bar').slideToggle('300');
+    })
+</script>
+</html>
